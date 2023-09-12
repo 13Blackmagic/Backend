@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const { Drink } = require('.');
 
 class Project extends Model {}
 
@@ -40,8 +41,8 @@ Project.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'Drink',
   }
 );
 
-module.exports = Project;
+module.exports = Drink;
