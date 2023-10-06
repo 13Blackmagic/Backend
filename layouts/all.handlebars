@@ -1,0 +1,32 @@
+<div class="Liquor">
+  <div class="card-header col-md-10">
+    <h2>
+      &#127864 PICK YOUR POISON
+    </h2>
+  </div>
+  {{#each liquors }}
+    <div class='liquor-card'>
+        <div class='liquor-card-header'>
+            {{name}}
+        </div>
+        <div class='card-body'>
+            <div class='liquor-card-text'>
+                <p>Price: ${{price}}</p>
+                <p>Size: {{volume}}</p>
+                {{!-- <p>Quantity: {{liquor.liquor_quantity}}</p> --}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+     <div class="Alcohol">
+      <button class="btn-primary" id="AlcoholBtn1">Whiskey</button>
+      <button class="btn-primary" id="AlcoholBtn2">Vodka</button>
+      <button class="btn-primary" id="AlcoholBtn3">Rum</button>
+      <button class="btn-primary" id="AlcoholBtn4">Tequila</button>
+      <button class="btn-primary" id="AlcoholBtn5">Gin</button>
+      <button class="btn-primary" id="AlcololBtn6">Brandy</button>
+    </div>
+    <div id="show-liquor"></div> 
+    <div class="Home">
+  </div>
+</div>
